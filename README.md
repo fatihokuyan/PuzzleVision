@@ -33,28 +33,35 @@ PuzzleVision/
 Projeyi kendi ortamınızda test etmek veya çalıştırmak için aşağıdaki adımları sırasıyla uygulayabilirsiniz:
 
 Depoyu Klonlayın:
+```
 git clone [https://github.com/fatihokuyan/PuzzleVision.git](https://github.com/fatihokuyan/PuzzleVision.git)
 cd PuzzleVision
-
+```
 Sanal Ortam (Virtual Environment) Oluşturun (Önerilir):
 
 Bash
+```
 python -m venv venv
-
+```
 # Windows için Aktifleştirme:
+```
 venv\Scripts\activate
-
+```
 # MacOS veya Linux için Aktifleştirme:
 source venv/bin/activate
 Gerekli Kütüphaneleri Yükleyin:
 
 Bash
+```
 pip install -r requirements.txt
+```
 Uygulamayı Başlatın:
 Kameranızın bağlı olduğundan emin olduktan sonra projeyi çalıştırın:
 
 Bash
+```
 python run.py
+```
 🎯 Serginin Amacı ve Detaylar
 Bu proje, Konya Bilim Merkezi'ne gelen başta çocuklar ve gençler olmak üzere tüm ziyaretçiler için tasarlanmıştır. Amacı; hem ziyaretçilerin motor becerilerini ve problem çözme yeteneklerini geliştiren geleneksel "puzzle" kavramını korumak, hem de yeni nesil yapay zeka ve görüntü işleme teknolojilerini deneyimlemelerini sağlamaktır.
 
@@ -112,27 +119,36 @@ To test or run the project in your local environment, follow these steps:
 Clone the Repository:
 
 Bash
+```
 git clone [https://github.com/fatihokuyan/PuzzleVision.git](https://github.com/fatihokuyan/PuzzleVision.git)
 cd PuzzleVision
 Create a Virtual Environment (Recommended):
-
+```
 Bash
+```
 python -m venv venv
-
+```
 # For Windows:
+```
 venv\Scripts\activate
-
+```
 # For MacOS or Linux:
+```
 source venv/bin/activate
+```
 Install Dependencies:
 
 Bash
+```
 pip install -r requirements.txt
+```
 Run the Application:
 Ensure your camera is connected and run:
 
 Bash
+```
 python run.py
+```
 🎯 Purpose and Details
 This project is designed for all visitors of the Konya Science Center, primarily children and young adults. It aims to preserve the traditional "puzzle" concept that develops motor skills and problem-solving abilities while allowing visitors to experience next-generation AI and image processing technologies.
 
