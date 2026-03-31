@@ -6,6 +6,7 @@ Detail page showing puzzle cards for a single category.
 
 from __future__ import annotations
 
+import os
 from typing import Callable
 
 from PyQt5.QtCore import Qt
@@ -15,7 +16,7 @@ from PyQt5.QtWidgets import (
     QPushButton, QLabel, QSizePolicy,
 )
 
-from src.config import CATEGORIES, UISettings
+from src.config import CATEGORIES, UISettings, Paths
 from src.ui import styles
 from src.ui.widgets.puzzle_card import PuzzleCard
 
@@ -46,7 +47,19 @@ class CategoryPageScreen(QWidget):
     # ------------------------------------------------------------------
 
     def _build(self, category_name, on_start_puzzle, on_back, registry) -> None:
-        self.setStyleSheet(styles.TRANSPARENT_BG)
+        bg = Paths.GAME_BACKGROUND
+        if os.path.exists(bg):
+            bg_url = bg.replace('\\', '/')
+            self.setStyleSheet(f"""
+                QWidget {{
+                    background-image: url('{bg_url}');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }}
+            """)
+        else:
+            self.setStyleSheet(styles.GRADIENT_BG)
 
         layout = QVBoxLayout(self)
         layout.setSpacing(5)

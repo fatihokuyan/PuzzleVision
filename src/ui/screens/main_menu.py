@@ -50,9 +50,10 @@ class MainMenuScreen(QWidget):
         # Background via stylesheet (transparent when bg_label is set)
         bg = Paths.MAIN_BACKGROUND
         if os.path.exists(bg):
+            bg_url = bg.replace('\\', '/')
             self.setStyleSheet(f"""
                 QWidget {{
-                    background-image: url({bg});
+                    background-image: url('{bg_url}');
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: cover;

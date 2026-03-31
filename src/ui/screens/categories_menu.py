@@ -50,7 +50,15 @@ class CategoriesMenuScreen(QWidget):
     def _build(self, on_category, on_back, registry, text_registry) -> None:
         bg = Paths.GAME_BACKGROUND
         if os.path.exists(bg):
-            self.setStyleSheet(styles.TRANSPARENT_BG)
+            bg_url = bg.replace('\\', '/')
+            self.setStyleSheet(f"""
+                QWidget {{
+                    background-image: url('{bg_url}');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }}
+            """)
         else:
             self.setStyleSheet(styles.GRADIENT_BG)
 
