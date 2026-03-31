@@ -1,5 +1,3 @@
-
-
 🧩 PuzzleVision - Konya Bilim Merkezi İnteraktif Puzzle Sergisi
 Konya Bilim Merkezi için özel olarak geliştirilmiş, ziyaretçilerin el hareketleriyle etkileşime girebildiği interaktif bir puzzle (yapboz) deneyimi. Bu proje, bilgisayarlı görü (computer vision) ve el izleme (hand tracking) teknolojilerini kullanarak fiziksel temas gerektirmeyen, yenilikçi ve eğlenceli bir sergi deneyimi sunar.
 
@@ -72,8 +70,6 @@ Not: Proje içindeki eğitim videoları dosya boyutu nedeniyle depoya dahil edil
 🏢 Kurum: Konya Bilim Merkezi (İnteraktif Sergiler)
 🔖 Lisans: Bu projenin kullanım hakları tamamen ilgili kuruma / geliştiriciye aittir. İzinsiz kopyalanması veya ticari amaçla kullanılması yasaktır.
 
-
------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 🧩 PuzzleVision - Konya Science Center Interactive Puzzle Exhibition
 An interactive puzzle experience specially developed for the Konya Science Center, where visitors can interact using hand gestures. This project offers an innovative and fun exhibition experience that requires no physical contact, utilizing computer vision and hand tracking technologies.
 
